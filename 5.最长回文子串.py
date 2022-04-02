@@ -5,7 +5,7 @@
 #
 
 # @lc code=start
-import re
+
 
 
 class Solution(object):
@@ -65,19 +65,19 @@ class Solution(object):
 
 
     
-    def isPalindrome(self, s):
-        sLen = len(s)
-        for i in range(sLen):
-            if i + 1 <= sLen-1-i:
-                if s[i] != s[sLen-1-i]:
-                    return 0
-            else:
-                break
-        return sLen
+    # def isPalindrome(self, s):
+    #     sLen = len(s)
+    #     for i in range(sLen):
+    #         if i + 1 <= sLen-1-i:
+    #             if s[i] != s[sLen-1-i]:
+    #                 return 0
+    #         else:
+    #             break
+    #     return sLen
 
-if __name__ == "__main__":
-    solution = Solution()
-    solution.longestPalindrome("babad")
+# if __name__ == "__main__":
+#     solution = Solution()
+#     solution.longestPalindrome("babad")
 
 # @lc code=end
 
